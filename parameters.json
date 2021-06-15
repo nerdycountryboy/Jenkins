@@ -1,0 +1,137 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "artifactsLocation": {
+            "value": "https://wvdportalstorageblob.blob.core.windows.net/galleryartifacts/Configuration_5-5-2021.zip"
+        },
+        "nestedTemplatesLocation": {
+            "value": "https://catalogartifact.azureedge.net/publicartifacts/Microsoft.Hostpool-ARM-1.4.3/"
+        },
+        "hostpoolName": {
+            "value": "PROD-02"
+        },
+        "hostpoolToken": {
+            "value": null
+        },
+        "vmAdministratorAccountUsername": {
+            "value": "uswiredazure"
+        },
+        "vmAdministratorAccountPassword": {
+            "value": null
+        },
+        "administratorAccountUsername": {
+            "value": "uswired@bv.local"
+        },
+        "administratorAccountPassword": {
+            "value": null
+        },
+        "hostpoolResourceGroup": {
+            "value": ""
+        },
+        "hostpoolProperties": {
+            "value": {}
+        },
+        "hostpoolLocation": {
+            "value": ""
+        },
+        "availabilityOption": {
+            "value": "None"
+        },
+        "availabilitySetName": {
+            "value": ""
+        },
+        "createAvailabilitySet": {
+            "value": false
+        },
+        "availabilitySetUpdateDomainCount": {
+            "value": 5
+        },
+        "availabilitySetFaultDomainCount": {
+            "value": 2
+        },
+        "availabilityZone": {
+            "value": 1
+        },
+        "vmInitialNumber": {
+            "value": 14
+        },
+        "vmResourceGroup": {
+            "value": "TEST-RESOURCE-GROUP"
+        },
+        "vmLocation": {
+            "value": "westus2"
+        },
+        "vmSize": {
+            "value": "Standard_D8s_v3"
+        },
+        "vmNumberOfInstances": {
+            "value": 1
+        },
+        "vmNamePrefix": {
+            "value": "WVD-PROD2"
+        },
+        "vmImageType": {
+            "value": "CustomImage"
+        },
+        "vmDiskType": {
+            "value": "Premium_LRS"
+        },
+        "vmUseManagedDisks": {
+            "value": true
+        },
+        "existingVnetName": {
+            "value": "TEST-VIRTUAL-NETWORK"
+        },
+        "existingSubnetName": {
+            "value": "default"
+        },
+        "virtualNetworkResourceGroupName": {
+            "value": "TEST-RESOURCE-GROUP"
+        },
+        "createNetworkSecurityGroup": {
+            "value": false
+        },
+        "domain": {
+            "value": "bv.local"
+        },
+        "ouPath": {
+            "value": "OU=Azure,OU=Computers,OU=MyBusiness,DC=bv,DC=local"
+        },
+        "aadJoin": {
+            "value": false
+        },
+        "intune": {
+            "value": false
+        },
+        "bootDiagnostics": {
+            "value": {
+                "enabled": true
+            }
+        },
+        "availabilitySetTags": {
+            "value": {}
+        },
+        "networkInterfaceTags": {
+            "value": {}
+        },
+        "networkSecurityGroupTags": {
+            "value": {}
+        },
+        "virtualMachineTags": {
+            "value": {}
+        },
+        "imageTags": {
+            "value": {}
+        },
+        "deploymentId": {
+            "value": "466d6e7a-1b37-4c5a-a515-0fb8fc09a0ac"
+        },
+        "apiVersion": {
+            "value": "2019-12-10-preview"
+        },
+        "vmCustomImageSourceId": {
+            "value": "/subscriptions/db8db7d9-740a-420c-a2bd-a942b55c8174/resourceGroups/TEST-RESOURCE-GROUP/providers/Microsoft.Compute/images/WVD-PROD2-V2"
+        }
+    }
+}
